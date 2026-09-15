@@ -1,1 +1,158 @@
 <h1>Welcome to our Game Studio Website!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Game Studio</title>
+    <style>
+        :root {
+            --bg-color: #121214;
+            --card-color: #1a1a1e;
+            --accent-color: #fa5c5c; /* Itch.io pink-red accent */
+            --text-color: #eeeeee;
+            --text-muted: #a0a0a5;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        p.tagline {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+        .btn-itch {
+            background-color: var(--accent-color);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.2s ease;
+            display: inline-block;
+        }
+        .btn-itch:hover {
+            background-color: #e04444;
+        }
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            padding-bottom: 60px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--card-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .game-card {
+            background-color: var(--card-color);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2a2a30;
+            transition: transform 0.2s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-thumb {
+            width: 100%;
+            height: 180px;
+            background-color: #252529;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-weight: bold;
+        }
+        .game-info {
+            padding: 20px;
+        }
+        .game-title {
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+        }
+        .game-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid var(--card-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Replace with your studio name -->
+        <h1>Our Indie Game Studio</h1>
+        <p class="tagline">Crafting unique interactive experiences. Check out our active developments and prototypes.</p>
+        <!-- Replace with your actual itch.io creator URL -->
+        <a href="https://itch.io" target="_blank" class="btn-itch">View Our Itch.io Profile</a>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Our Games</h2>
+        <div class="games-grid">
+            
+            <!-- Game Project 1 -->
+            <div class="game-card">
+                <div class="game-thumb">GAME ART / LOGO PLACEHOLDER</div>
+                <div class="game-info">
+                    <h3 class="game-title">Project Title One</h3>
+                    <p class="game-desc">A brief, exciting description of your game. Mention the genre, core mechanics, and what makes it fun to play.</p>
+                    <a href="https://itch.io/your-game-url" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">Play on itch.io &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Game Project 2 -->
+            <div class="game-card">
+                <div class="game-thumb">GAME ART / LOGO PLACEHOLDER</div>
+                <div class="game-info">
+                    <h3 class="game-title">Project Title Two</h3>
+                    <p class="game-desc">Another card for a game jam entry, prototype, or secondary project you want publishers or players to see.</p>
+                    <a href="https://itch.io/your-game-url" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">Play on itch.io &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Studio Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
